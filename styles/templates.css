@@ -132,8 +132,28 @@
     }
 }
 
-@media screen and (max-width: 869px) {
+@media screen and (max-width: 710px) {
     #footer {
         position: static;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .links {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        }
+        a{
+            margin: 5px;
+        }
+
+        
     }
 }
