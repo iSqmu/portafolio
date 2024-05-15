@@ -11,23 +11,39 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
+        <!--? Navbar -->
         <div class="navbar">
             <h1 id="navbar-ttl">Sqmu's Portafolio</h1>
             <div class="links">
                 <a href="index.html">Home</a>
-                <a href="#about.html">About Me</a>
-                <a href="#projects.html">Projects</a>
+                <a href="projects.html">Projects</a>
                 <a href="#contact.html">Contact</a>
             </div>
         </div>
+
+    <!--? Content -->
         <div class="container">
-            <div>
+            <div class="about-me">
                 <h3>Sobre mi</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nesciunt quasi fuga fugit deserunt sequi repellat tempore deleniti ad, culpa, totam ipsam voluptates quo omnis cum tempora quisquam maiores molestias nam temporibus illum esse laboriosam. Temporibus nihil veritatis culpa nostrum.</p>
+                <p>Apasionado del diseño gráfico y la edición audiovisual con una sólida experiencia en herramientas como Adobe InDesign, Illustrator y Photoshop para crear contenido visual impactante. Con habilidades avanzadas en edición de video, he trabajado con plataformas como Sony Vegas, Premiere Pro y After Effects para producir contenido dinámico y atractivo.</p>
+                <p>Además, cuento con experiencia en el desarrollo web, especialmente en JavaScript, lo que me permite integrar elementos interactivos y funcionales en proyectos digitales. Mi enfoque versátil y creativo se ha visto reflejado en una amplia gama de proyectos, desde campañas publicitarias hasta sitios web dinámicos.</p>
+                <div class="fotos-carrousel">
+                    <div class="carrousel">
+                        
+                        <img class="carrousel-img" src="static/img/img3.jpeg" alt="imagen 1">
+                        <img class="carrousel-img" src="static/img/img4.jpeg" alt="imagen 1">
+                        <img class="carrousel-img" src="static/img/img5.jpeg" alt="imagen 1">
+                        <img class="carrousel-img" src="static/img/img1.jpeg" alt="imagen 1">
+                    </div>
+                    <button class="prev"><i class="fa-solid fa-caret-left"></i></button>
+                    <button class="next"><i class="fa-solid fa-caret-right"></i></button>
+                    <h2 class="imgnumber"><span class="nmbr">1</span>/4</h2>
+                </div>
             </div>
             <div>
                 <h3>Aptitudes</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, officia quod. In repudiandae, repellendus assumenda a nulla sed sint consequatur. Nihil possimus harum nemo deleniti aperiam placeat culpa incidunt corrupti!</p>
+                <p>Soy un profesional con gran capacidad para la indagación y resolución de problemas. Poseo una mente analítica y metódica que me permite identificar rápidamente las causas de los problemas y desarrollar soluciones creativas y efectivas.</p>
+                <p>Además, soy un aprendiz autodidacta rápido y adaptable. Me apasiona adquirir nuevos conocimientos y habilidades, y siempre estoy buscando formas de mejorar mis capacidades. Soy capaz de aprender de forma independiente a través de diversos recursos como libros, cursos en línea, talleres y la experiencia práctica.</p>
                 <h5>Lenguajes de programación:</h5>
                 <div class="languages">
                     <div class="lan html">
@@ -35,7 +51,7 @@
                         <p><b>Tiempo de Experiencia:</b> 4 años</p>
                         <p><b>Porcentaje de manejo:</b> 90%</p>
                     </div>
-                    <div class="lan css">
+                    <div class="lan css ">
                         <h4><i class="fa-brands fa-css3-alt"></i> CSS</h4>
                         <p><b>Tiempo de Experiencia:</b> 4 años</p>
                         <p><b>Porcentaje de manejo:</b> 85%</p>
@@ -63,5 +79,7 @@
                 </span>
             </footer>
         </div>
+
+        <script src="scripts/home.js"></script>
     </body>
 </html>
