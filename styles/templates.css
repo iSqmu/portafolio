@@ -1,16 +1,19 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.555) 30%, #33333300 100%);
-    color: #333;
-    padding: 1rem   ;
+    background: rgba(255, 255, 255, .3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    color: #ffffff;
+    padding: .5rem ;
+    align-items: center;
     margin: 0;
     position: sticky;
     z-index: 30;
     top: 0;
     h1 {
         margin-left: 1rem;
-        margin-top: 0 ;
+        margin-top: .5rem ;
         transition: all .2s ease-in-out;
     }
     a {
@@ -49,22 +52,22 @@
 @keyframes navLinkFade {
     0% {
         opacity: .5;
-        text-shadow: 0 0 2px #333;
+        text-shadow: 0 0 2px #eee;
     }
     50% {
         opacity: 1;
-        text-shadow: 0 0 10px #333;
+        text-shadow: 0 0 10px #eee;
     }
 
     100% {
         opacity: .5;
-        text-shadow: 0 0 2px #333;
+        text-shadow: 0 0 2px #eee;
     }
 }
 
 .navbar h1:hover {
     color: transparent;
-    -webkit-text-stroke: 0.5px #333;
+    -webkit-text-stroke: 0.5px #eee;
     transition: all 1s ease-in-out;
     animation: navLinkFade infinite ease-in-out 2s;
 }

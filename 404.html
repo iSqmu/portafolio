@@ -13,6 +13,7 @@
     color: #727272;
     background: #eee;
     line-height: 1.6;
+    transition: all .2s ease-in;
   }
 
   .container {
@@ -48,15 +49,31 @@
     padding: 10px;
     color: #1B1A1A;
     font-weight: 700;
-    border: solid 2px #e7e7e7;
+    border: solid 2px #000;
+    border-radius: 10px;
     text-decoration: none;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    position: relative;
+    overflow: hidden;
   }
 
-  .go-back a:hover {
-    border-color: #1B1A1A;
+  .go-back a::before {
+    content: '';
+    width: 120px;
+    height: 100%;
+    background: #336CFF;
+    position: absolute;
+    top: 0;
+    left: -120px;
+    border-radius: 0 30px 30px 0;
+    transition: all .5s ease-in-out;
+    z-index: -1;
+  }
+
+  .go-back a:hover::before{
+    left: 0;
   }
 
   @media screen and (min-width: 768px) {
@@ -99,8 +116,9 @@
   .mode {
     position: absolute;
     top: 10px;
-    right: 10px;
-    transition: all .3s ease-in-out;
+    right: 6px;
+    transition: all .3s ease-in;
+    font-weight: bolder;
   }
 
   .dark-mode {
@@ -121,11 +139,11 @@
 
     <div class="container">
       <h2>404</h2>
-      <h1>Page not found.</h1>
+      <h1>Pagina no encontrada</h1>
 
-      <p>We’re sorry but it appears that we can’t find the page you were looking for. Usually this occurs because of a page that previously existed was removed or you’ve mistyped the address.</p>
+      <p>Lo sentimos, pero parece que no hemos podido encontrar la pagina que estabas buscando. Usualmente esto ocurre porque la pagina que existía anteriormente fue removida o escribiste mal la dirección.</p>
 
-      <span class="go-back"><a href="/">Go back</a></span>
+      <span class="go-back"><a href="index.html" id="goback">Volver</a></span>
       <div id="toggle-dark"><button class="sun"><i class="fa-solid fa-sun"></i></button><span class="mode">Clear Mode</span><div>
     </div>
   <script src="scripts/404.js"></script>
